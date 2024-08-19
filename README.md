@@ -20,7 +20,7 @@ docker build -t paraview .
 
 To run the container:
 
-'docker run -p 11111:11111 -itd --gpus all --name paraview -v $PWD:/home/paraview-user/data pvserver'
+'docker run -p 11111:11111 -itd --gpus all --name paraview -v $PWD:/home/paraview-user/data ghcr.io/jtbreis/pvserver'
 
 The container is now running in the background, and you can connect to the ParaView by running the ssh command in your Terminal and then connecting to the Server in Paraview Client.
 

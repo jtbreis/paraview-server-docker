@@ -28,5 +28,4 @@ WORKDIR /home/paraview-user/data
 EXPOSE ${PORT}
 
 
-# CMD ["mpirun", "-n", "${NUMBER_PROCESSORS}", "./ParaView-5.13.0-RC2-egl-MPI-Linux-Python3.10-x86_64/bin/pvserver"]
 ENTRYPOINT [ "./../pvserver/ParaView-5.13.0-RC2-egl-MPI-Linux-Python3.10-x86_64/bin/pvserver"]
