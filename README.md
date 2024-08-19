@@ -10,7 +10,7 @@ To build the container:
 
 To run the container:
 
-'docker run -itd --gpus all -p 11111:11111 --name paraview --mount type=bind,src=/your/data/path,target=/data paraview'
+'docker run -p 11111:11111 -itd --gpus all --name paraview -v $PWD:/home/paraview-user/data pvserver'
 
 The container is now running in the background and you can connect to the ParaView by running the ssh command in your Terminal and then connect to the Server in Paraview.
 'ssh -L 11111:localhost:11111 your-server-name'
