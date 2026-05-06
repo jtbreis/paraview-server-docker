@@ -45,3 +45,10 @@ For some reason the container stops when you close the ParaView client, so you h
 ```
 docker start paraview
 ```
+
+## Docker Compose
+
+In the folder just run:
+```
+docker compose up -d
+```

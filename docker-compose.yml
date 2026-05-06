@@ -1,0 +1,12 @@
+services:
+  paraview:
+    image: paraview
+    container_name: paraview
+    stdin_open: true
+    tty: true
+    ports:
+      - "11111:11111"
+    volumes:
+      - /mnt/raid:/home/paraview-user/data
+    restart: unless-stopped
+    gpus: all
